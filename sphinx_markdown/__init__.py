@@ -9,6 +9,7 @@ from sphinx_markdown.search import handle_page_context_html
 def setup(app):
     """Sphinx Extension setup entrypoint
     """
+    add.add_source_parser('markdown', '.md', MarkdownParser)
     app.add_node(MarkdownNode,
                  html=(visit_markdown_node, depart_markdown_node))
     app.add_directive('markdown-ingest', MarkdownIngestor)
