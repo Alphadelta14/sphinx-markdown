@@ -1,7 +1,10 @@
 
 from docutils.parsers.rst import directives
 from sphinx.ext.autodoc import Options
-from sphinx.util.compat import Directive
+try:
+    from sphinx.util.compat import Directive
+except ImportError:
+    from docutils.parsers.rst import Directive
 
 from sphinx_markdown.nodes import MarkdownNode
 
