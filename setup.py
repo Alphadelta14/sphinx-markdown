@@ -10,7 +10,7 @@ from setuptools import setup
 
 setup(
     name='sphinx-markdown',
-    version='1.0.1',
+    version='1.0.2',
     description='Sphinx extension to support Markdown files',
     url='https://github.com/Alphadelta14/sphinx-markdown',
     author='Alphadelta14',
